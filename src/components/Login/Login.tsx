@@ -117,7 +117,7 @@ const Login = () => {
             <h2 style={titleStyle}>CONTROLL-ENV</h2>
           </div>
           
-          <p style={subtitleStyle}>Protocolo de Acesso Ativado</p>
+          <p style={subtitleStyle}>BEM VINDO!!</p>
           
           {errorMsg && <div style={errorBox}>{errorMsg}</div>}
 
