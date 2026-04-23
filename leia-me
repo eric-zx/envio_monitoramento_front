@@ -1,0 +1,51 @@
+1. Ambiente Python (O Coração do Backend)
+
+O requirements.txt só funciona se o Python já estiver lá para interpretá-lo.
+
+    Python 3.10 ou superior: Durante a instalação no Windows, marque a caixa "Add Python to PATH". Isso evita erros de "comando não encontrado" no terminal.
+
+    PIP (Package Installer): Geralmente vem com o Python, mas é bom verificar.
+
+2. Navegador e Automação (Para os seus Bots)
+
+Como você trabalha com portais da TIM, Claro e Arqia via Selenium:
+
+    Google Chrome: Deve ser a versão oficial e atualizada.
+
+    ChromeDriver: O ideal é que seu código use a biblioteca webdriver-manager (coloque-a no seu requirements.txt), assim você não precisa baixar o executável do driver manualmente toda vez que o Chrome atualizar.
+
+3. Ferramentas de Código e Gestão
+
+    VS Code (Visual Studio Code): O melhor editor para você continuar mexendo nos scripts.
+
+    Git: Essencial se você for baixar o código direto de um repositório (GitHub/GitLab).
+
+    Node.js (LTS): Se você pretende rodar/editar o frontend (React/Angular) na máquina nova.
+
+        Nota: Se você apenas for usar o sistema, pode gerar o build na sua máquina e levar apenas a pasta pronta, dispensando o Node na máquina de destino.
+
+4. Banco de Dados
+
+O seu sistema usa PHPMyAdmin e PostgreSQL, certo?
+
+    XAMPP ou WampServer: A forma mais fácil de ter o Apache, MySQL e PHPMyAdmin rodando rápido em uma máquina local para o SIM-MAPS.
+
+    PostgreSQL: Se o seu backend FastAPI estiver conectado a um banco Postgres local, você precisará instalar o instalador do Postgres.
+
+5. Utilitários de Edição (Seu estilo de trabalho)
+
+Baseado no seu histórico de limpeza de dados de ICCID:
+
+    Notepad++: Fundamental para suas limpezas rápidas com Regex (Expressões Regulares) que você costuma fazer nos arquivos da TIM/Claro.
+
+📝 Checklist de Comandos (Rodar no Terminal assim que instalar o Python):
+
+    Instalar as dependências do Python:
+    Bash
+
+    pip install -r requirements.txt
+
+    Se for usar o Frontend (e tiver o Node):
+    Bash
+
+    npm install
